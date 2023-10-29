@@ -1,0 +1,352 @@
+/* NavBar Section */
+.navBarSection {
+display: flex;
+justify-content: space-around;
+align-items: center;
+background-color: black;
+}
+.mainElement{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.menus a{
+    padding: 0 10px;
+    cursor: pointer;
+}
+.nameLink {
+   color : white;
+   text-decoration: none;
+   font-size: 30px;
+}
+.nameLink span{
+    color:rgb(214, 72, 96);
+}
+
+.pageLinks{
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+.pageLinks::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: rgb(214, 72, 96);
+    position: absolute;
+    left: 0em;
+    bottom: -6px;
+} 
+.pageLinks:hover::after{
+    width: 100%;
+    transition : all 0.5s
+}
+
+/* Home Section */
+.homeSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.firstName {
+    color: rgb(214, 72, 96);
+    font-family: 'Bree Serif', serif;
+    font-size: 30px;
+}
+
+.homePhoto {
+    width: 20em;
+    height: 25em;
+    object-fit: cover;
+}
+ .myDescriptionText,
+.myDescription {
+    text-align: justify;
+    color: white;
+}
+
+.resumePdf {
+    border: 1px solid #ff004f;
+    background-color: transparent;
+    color: #ff004f;
+    padding: 14px 0;
+    border-radius: 8px;
+    transition: transform 0.5s;
+}
+
+.resumePdf:hover {
+    background-color: #ff004f;
+    color: white;
+    transform: scale(1.1);
+    text-decoration: none;
+}
+
+.resumeAnchor {
+    padding: 14px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+
+/* About Section */
+.aboutSection{
+    background-color: black;
+}
+.companyLogo{
+    width: 5%;
+    height: 5%;
+}
+.webDevelopmentSkill span , .experience span , .courseTitle{
+    color:  rgb(214, 72, 96);
+    font-size: medium;
+}
+
+.photoBg{
+    text-align: center;
+}
+
+.skillsSets{
+    cursor: pointer;
+}
+#skillBtn{
+    border-bottom: 2px solid rgb(214, 72, 96);
+}
+
+/* Portfolio Section */
+.portfolioSection{
+    background-color: black;
+    height: auto;
+}
+.card {
+    border-radius: 20px;
+    border: 1px solid white;
+    width: 100%;
+    height: 20em;
+    background-color: black;
+}
+
+.images {
+    width: 100%;
+    height: 20em;
+    object-fit: cover;
+    transition: transform 0.5s;
+    border-radius: 20px;
+}
+.recoilForm{
+    width: 100%;
+    height: 20em;
+    object-fit: contain;
+}
+
+.card-body {
+    width: 100%;
+    height: 0%;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), #ff004f);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    color: white;
+    transition: height 0.5s;
+}
+
+.card-body a {
+    margin-top: 20px;
+    color: #ff004f;
+    border: 1px solid #ff004f;
+    font-size: 18px;
+    background-color: white;
+    border-radius: 50%;
+    line-height: 30px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+.card-body a:hover {
+    color: white;
+    border: 1px solid #ff004f;
+    background-color: #ff004f;
+}
+
+.card:hover .images {
+    transform: scale(0.9);
+}
+
+.card:hover .card-body {
+    height: 100%;
+    border-radius: 20px;
+}
+.seeMoreBtn{
+    border: 1px solid #ff004f;
+    background-color: transparent;
+    color: #ff004f;
+    border-radius: 8px;
+    padding:14px 50px;
+   transition: transform 0.5s;
+
+}
+.seeMoreBtn:hover{
+    background-color: #ff004f;
+    color:white;
+   transform: scale(1.1);
+}
+.seeMoreImgs{
+    background-color: black;
+}
+
+.gitLink{
+    border: 1px solid #ff004f;
+    border-radius: 5px;
+    padding: auto;
+    color :white;
+    background-color: #ff004f;
+    margin:5px;
+}
+.gitLink:hover{
+   transform: scale(1.1);
+   transition: all 0.5s;
+   text-decoration: underline;
+   border: 1px solid white;
+   padding: 5px;
+   background-color: #ff004f;
+   color:white;
+   border-radius: 5px;
+}
+
+/* Contact Section */
+.contactSection{
+    height: 100vh;
+    background-color: black;
+}
+.from-control{
+    outline: none;
+}
+.form-control::placeholder{
+    color:slategray;
+}
+.form-control[type=text]:focus{
+    border: none;
+}
+
+/* Footer Section */
+.footerSection {
+    color: white;
+    width: 100%;
+    background-color: black;
+}
+
+.followText .icons {
+    margin: 4em 2em;
+    background-color: black;
+    color:white;
+}
+
+.followText .icons:hover {
+    color: #ff004f;
+      width: 100%;  
+}
+button{
+    background-color: black;
+    border:none;
+    transition: transform 0.5s;
+}
+button:hover{
+    transform: scale(1.2);
+    text-decoration: underline;
+    border-bottom: 1px solid #ff004f;
+
+}
+.menuBtn{
+    background-color:transparent;
+    color: white;
+}
+.nav-item{
+    padding: 20px 0px;
+}
+
+/* Media queries */
+@media only screen and (max-width:767px){
+    .row{
+        width: 90%!important;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width : 768px){
+    .rightSection{
+        display: block;
+    }
+    .smallScreenNav{
+        display: none;
+    }
+}
+@media only screen and (max-width : 767px){
+    .rightSection{
+        display: none;
+    }
+    .smallScreenNav{
+        display: block;
+    }
+    .navBarSection{
+        background-image: linear-gradient(to right, black , rgb(214, 72, 96));
+    }
+    .offcanvas-end{
+        background-image: linear-gradient(to right, black , rgb(214, 72, 96));
+        opacity: 0.8;
+    }
+    .nameLink{
+        color: white;
+        font-family: 'Bree Serif', serif;
+
+    }
+  
+    .nameLink span{
+        color: rgb(214, 72, 96);
+    }
+    .resumeAnchor{
+    padding: 2px;
+}
+    
+}
+@media only screen and (max-width:410px){
+    .navBarSection{
+        max-width: 100%;
+    }
+}
+
+/* Home media query */
+
+@media only screen and (max-width:767px){
+ .textSection , .photoSection{
+    max-width: 50%;
+ }
+    
+    .homePhoto {
+        width: 100%;
+        height: 100%;
+        object-fit: scale-down;
+    }
+}
+@media only screen and (max-width:500px){
+    .textSection{
+        max-width: 50%;
+     }
+     .photoSection{
+        max-width: 50%;
+     }
+    .myDescription ,.myDescription span , .myDescriptionText{
+        font-size: small;
+       }
+      
+   }

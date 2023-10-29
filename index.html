@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./Styles/Style.css">
+
+    <!-- Font Awsome icons -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <!-- Boostrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <title>Portfolio App</title>
+
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <div class='mainElement z-2'>
+        <div class="navBarSection py-2">
+            <a class='nameLink' href="#homeSectionId">
+                <span>
+                    Z
+                </span>
+                aid &nbsp;
+                <span>
+                    M
+                </span>
+                ahmood
+            </a>
+
+            <div class="rightSection text-end align-content-center">
+                <ul class="menus list-unstyled m-0">
+                    <a href="#homeSectionId" class="pageLinks text-white">Home</a>
+                    <a href="#aboutSectionId" class="pageLinks text-white">About</a>
+                    <a href="#portfolioSectionId" class="pageLinks text-white">Portfolio</a>
+                    <a href="#contactSectionId" class="pageLinks text-white">Contact</a>
+                </ul>
+            </div>
+
+            <!-- off canvas -->
+            <div class='smallScreenNav'>
+                <button class="menuBtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight"><span><i class="bi bi-list fw-bolder fs-2"></i></span></button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title text-white" id="offcanvasRightLabel">MenuBar</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body py-0">
+                        <ul class="navbar-nav align-items-start smallScreens">
+
+                            <li class="nav-item ms-2">
+                                <a class="pageLinks" href="#homeSectionId" class="pagesLinks mx-3">Home</a>
+                            </li>
+                            <li class="nav-item ms-2">
+                                <a class="pageLinks" href="#aboutSectionId" class="pagesLinks mx-3">About</a>
+                            </li>
+                            <li class="nav-item ms-2">
+                                <a class="pageLinks" href="#portfolioSectionId" class="pagesLinks mx-3">Portfolio</a>
+                            </li>
+                            <li class="nav-item ms-2">
+                                <a class="pageLinks" href="#contactSectionId" class="pagesLinks mx-3">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Home Section -->
+    <div id="homeSectionId" class='container-fluid homeSection'>
+        <div class='col-md-12'>
+            <div class='row'>
+                <div class='col-md-1'></div>
+
+                <div class='col-md-5 textSection d-grid align-content-center'>
+                    <h3 class='myDescription text-white'>Hello, I am <span class='firstName'>Zaid</span> Mahmood <br />
+                        From Pakistan</h3>
+                    <p class="myDescriptionText text-white">A Web Developer 👨‍💻 having an experience of building Web
+                        applications with
+                        Javascript / Reactjs / Bootstrap and some other cool libraries and frameworks.</p>
+                    <Typedjs />
+                    <button class='resumePdf'><a class='resumeAnchor' href="./my CV/Resume.pdf"
+                            download="Resume.pdf">Download Resume</a></button>
+                </div>
+
+                <div class='col-md-6 photoSection float-start'>
+                    <img class='homePhoto' src="Images/homePhoto.png" alt="home" />
+                    <div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="aboutSectionId" class="container-fluid aboutSection text-white py-5">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <div class="photoBg border-dark rounded-2 bg-dark">
+                        <img src="./Images/aboutImage.png" />
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+                <div class='col-md-5'>
+                    <h2>About Me</h2>
+                    <p class='text-secondary'>
+                        Hi, I'm Zaid Mahmood, a Web Developer based in Lahore. I am passionate about building websites
+                        with the help of ReactJs , Javascript , HTML5 and CSS3. I enjoy making the website designs and
+                        making it functional.
+                        I have 1.5 years of experience in IT industry. I am constantly expanding my skills and knowledge
+                        in building websites with new technologies.
+                    </p>
+
+                    <div class='allSkillsSet'>
+                        <div class='text-secondary'>
+                            <b>
+                                <p id="skillBtn" class="skillsSets d-inline-block me-2" onclick="checkSkills()">Skills
+                                </p>
+                            </b>
+                            <b>
+                                <p id="experienceBtn" class="skillsSets d-inline-block mx-2"
+                                    onclick="checkExperience()">Experience</p>
+                            </b>
+                            <b>
+                                <p id="educationBtn" class="skillsSets d-inline-block mx-2" onclick="checkEducation()">
+                                    Education</p>
+                            </b>
+                        </div>
+
+                        <div id="skill" class='webDevelopmentSkill text-secondary text-uppercase'>
+                            <p><b>Languages: <span>HTML5 , CSS3 , Javascript</span></b></p>
+                            <p><b>Frameworks/Library: <span>React JS , Bootstrap , Tailwind CSS</span></b></p>
+                            <p><b>Source Controls: <span>Git / Github</span></b></p>
+                            <p><b>Designing Tool: <span>Canva</span></b></p>
+                        </div>
+
+                        <div id="experiences" class='experience text-secondary text-uppercase d-none'>
+                            <div>
+                                <img class='companyLogo' src="./Images/codeHuddleImage.jpg" alt="ch-pic" />
+                                <p class='d-inline-block px-2'><b>Code Huddle: <span>October-2021 to
+                                            August-2022</span></b></p>
+                            </div>
+                            <div>
+                                <img class='companyLogo' src="./Images/fahadTechSolImg.jpg" alt="fh-pic" />
+                                <p class='d-inline-block px-2'><b>Fahad Tech Solution: <span>May-2023 to
+                                            Present</span></b></p>
+                            </div>
+                        </div>
+
+                        <div id="educations" class='education text-secondary text-uppercase d-none'>
+                            <p class='courseYear mb-0'><b>2021</b></p>
+                            <p class='courseTitle'><b>Frontend Develpment Training from PITB Lahore</b></p>
+                            <p class='courseYear mb-0'><b>2017</b></p>
+                            <p class='courseTitle'><b>B.S<span class='text-lowercase'>c </span>Mechanical Engineering
+                                    Technology from UET Lahore</b></p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class='col-md-2'></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="portfolioSectionId" class="portfolioSection  text-white py-5">
+
+        <div class="container">
+
+            <div class='row'>
+                <div class='text-center'>
+                    <h3>My Work</h3>
+                </div>
+
+                <div class='col-md-4 py-2'>
+                    <div class="card">
+                        <img src="Images/bmiImage.png" class="card-img-top images" alt="card-img" />
+                        <div class="card-body">
+                            <h5 class="card-title text-decoration-underline">BMI Calculator</h5>
+                            <p class="card-text">Body mass index (BMI) is a measure of body fat based on height and
+                                weight that applies to adult men and women.</p>
+                            <a href="https://github.com/Zaid-Mahmood/body-mass-index-calculator" target="_blank"
+                                class="btn btn-primary"><i class="bi bi-box-arrow-up-left"></i></a>
+                            <button
+                                onclick="window.open('https://github.com/Zaid-Mahmood/body-mass-index-calculator','_blank')"
+                                class="gitLink">Github Link</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='col-md-4 py-2'>
+                    <div class="card">
+                        <img src="Images/e-commerce.png" class="card-img-top images img-fluid" alt="card-img" />
+                        <div class="card-body">
+                            <h5 class="card-title text-decoration-underline">E-commerce Store</h5>
+                            <p class="card-text">Website for trading of goods and services on the internet.</p>
+                            <a href="https://github.com/Zaid-Mahmood/E-commerce" target="_blank"
+                                class="btn btn-primary"><i class="bi bi-box-arrow-up-left"></i></a>
+                            <button onclick="window.open('https://github.com/Zaid-Mahmood/E-commerce','_blank')"
+                                class="gitLink">Github Link</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='col-md-4 py-2'>
+                    <div class="card">
+                        <img src="Images/multi-step-form.png" class="card-img-top images" alt="card-img" />
+                        <div class="card-body">
+                            <h5 class="card-title text-decoration-underline">Multi-Step-Form</h5>
+                            <p class="card-text">Demo website for shopping which mainly depends on user plans selection
+                                and show the individual and overall prices accordingly.</p>
+                            <a href="https://github.com/Zaid-Mahmood/multi-step-form" target="_blank"
+                                class="btn btn-primary"><i class="bi bi-box-arrow-up-left"></i></a>
+                            <button onclick="window.open('https://github.com/Zaid-Mahmood/multi-step-form','_blank')"
+                                class="gitLink">Github Link</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="row py-5">
+
+
+                <div class='col-md-4 py-2'>
+                    <div class="card">
+                        <img src="Images/recoil-form.png" class="card-img-top recoilForm" alt="card-img" />
+                        <div class="card-body">
+                            <h5 class="card-title text-decoration-underline">Users Data in Table</h5>
+                            <p class="card-text">Website demo to showcase the users data from one component to another
+                                component in table using Recoil.</p>
+                            <a href="https://github.com/Zaid-Mahmood/RecoilForm" target="_blank"
+                                class="btn btn-primary"><i class="bi bi-box-arrow-up-left"></i></a>
+                            <button onclick="window.open('https://github.com/Zaid-Mahmood/RecoilForm','_blank')"
+                                class="gitLink">Github Link</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='col-md-4 py-2'>
+                    <div class="card">
+                        <img src="Images/student-loan-calculator.png" class="card-img-top images" alt="card-img" />
+                        <div class="card-body">
+                            <h5 class="card-title text-decoration-underline">Student Loan Calculator</h5>
+                            <p class="card-text">Student loan calculator shows what your and your spouse monthly loan payments will look like and how your loans will amortize over time.</p>
+                            <a href="https://github.com/Zaid-Mahmood/Student-Loan-Calculator" target="_blank"
+                                class="btn btn-primary"><i class="bi bi-box-arrow-up-left"></i></a>
+                            <button
+                                onclick="window.open('https://github.com/Zaid-Mahmood/Student-Loan-Calculator','_blank')"
+                                class="gitLink">Github Link</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='col-md-4 py-2'>
+                    <div class="card">
+                        <img src="Images/zoocasa.png" class="card-img-top images" alt="card-img" />
+                        <div class="card-body">
+                            <h5 class="card-title text-decoration-underline">Zoocasa Landing Page</h5>
+                            <p class="card-text">Builds the pixel perfect design of zoocasa.com landing page.</p>
+                            <a href="https://github.com/Zaid-Mahmood/zoocasa-landing-page" target="_blank"
+                                class="btn btn-primary"><i class="bi bi-box-arrow-up-left"></i></a>
+                            <button
+                                onclick="window.open('https://github.com/Zaid-Mahmood/zoocasa-landing-page','_blank')"
+                                class="gitLink">Github Link</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class='col-md-4 py-2'>
+                    <div class="card">
+                        <img src="Images/alphalette.png" class="card-img-top images" alt="card-img" />
+                        <div class="card-body">
+                            <h5 class="card-title text-decoration-underline">Alphaleteathletics Landing Page</h5>
+                            <p class="card-text">Builds the pixel perfect design of alphaleteathletics.com landing page.</p>
+                            <a href="https://github.com/Zaid-Mahmood/alphalette-landing-page" target="_blank"
+                                class="btn btn-primary"><i class="bi bi-box-arrow-up-left"></i></a>
+                            <button
+                                onclick="window.open('https://github.com/Zaid-Mahmood/alphalette-landing-page','_blank')"
+                                class="gitLink">Github Link</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='col-md-4 py-2'>
+                    <div class="card">
+                        <img src="Images/react-register-form.png" class="card-img-top images" alt="card-img" />
+                        <div class="card-body">
+                            <h5 class="card-title text-decoration-underline">Registration Form</h5>
+                            <p class="card-text">Made Registration Form so that admin can handle users data like add, read, edit and delete it.</p>
+                            <a href="https://github.com/Zaid-Mahmood/react-registration-form" target="_blank"
+                                class="btn btn-primary"><i class="bi bi-box-arrow-up-left"></i></a>
+                            <button
+                                onclick="window.open('https://github.com/Zaid-Mahmood/react-registration-form','_blank')"
+                                class="gitLink">Github Link</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='col-md-4 py-2'>
+                    <div class="card">
+                        <img src="Images/todo-app.png" class="card-img-top images" alt="card-img" />
+                        <div class="card-body">
+                            <h5 class="card-title text-decoration-underline">Todo App</h5>
+                            <p class="card-text">Helps user to add its daily tasks, edit his tasks, update tasks and delete the task. Moreover, the user can also search the tasks from the lists of tasks.
+                            </p>
+                            <a href="https://github.com/Zaid-Mahmood/todo-app" target="_blank"
+                                class="btn btn-primary"><i class="bi bi-box-arrow-up-left"></i></a>
+                            <button onclick="window.open('https://github.com/Zaid-Mahmood/todo-app','_blank')"
+                                class="gitLink">Github Link</button>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contactSectionId" class='contactSection text-center pt-5 pb-2'>
+        <h2 class="text-white">Contact Me</h2>
+        <form action="https://formspree.io/f/xnqkleow" method="POST" class='form'>
+            <div class='row w-100'>
+                <div class='col-md-2'></div>
+                <div class='col-md-8'>
+                    <div class="text-start my-3">
+                        <input type="text" class="form-control bg-dark border-dark text-secondary"
+                            placeholder="Your Name" name="fullName" pattern="[A-Za-z\s]+"
+                            title="Your name must starts with Capital Letters and it must be letters only" required />
+                    </div>
+
+
+                    <div class="text-start mb-3">
+                        <input type="email" class="form-control bg-dark border-dark text-secondary"
+                            placeholder="demo@mail.com" name="email" required />
+                    </div>
+
+
+                    <div>
+                        <textarea class="form-control bg-dark border-dark text-secondary" name="textareaField" rows="5"
+                            placeholder="Your Message Here..." required minlength="10"></textarea>
+                    </div>
+
+
+                    <button type="submit" class="seeMoreBtn mt-5 text-decoration-none">Submit</button>
+
+                </div>
+
+                <div class='col-md-2'></div>
+            </div>
+
+        </form>
+    </div>
+
+    <!-- Footer Section -->
+    <div class='footerSection py-3'>
+        <div class='followText text-center'>
+            <h2>Follow Me</h2>
+
+            <button>
+                <a href="https://www.linkedin.com/in/zaid-mahmood-web-developer" target="_blank">
+                    <i class="icons bi bi-linkedin"></i>
+                </a>
+            </button>
+            <button>
+                <a href="https://github.com/Zaid-Mahmood" target="_blank">
+                    <i class="icons bi bi-github"></i>
+                </a>
+            </button>
+
+            <button>
+                <a href="mailto:mahmoodzaid603@gmail.com" target="_blank">
+                    <i class="icons bi bi-envelope"></i>
+                </a>
+            </button>
+        </div>
+
+    </div>
+</body>
+
+</html>
